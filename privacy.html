@@ -5,59 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy — StoryBot</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 640px; margin: 60px auto; padding: 0 20px; color: #1a1a1a; line-height: 1.7; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 700px; margin: 60px auto; padding: 0 20px; color: #1a1a1a; line-height: 1.7; }
         h1 { font-size: 28px; margin-bottom: 4px; }
         h2 { font-size: 18px; margin-top: 32px; }
+        h3 { font-size: 16px; margin-top: 24px; }
         .date { color: #888; font-size: 14px; margin-bottom: 32px; }
         a { color: #0066cc; }
+        table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 14px; }
+        th { background: #f5f5f5; }
     </style>
 </head>
 <body>
     <h1>Privacy Policy</h1>
     <p class="date">Last updated: April 1, 2026</p>
 
-    <p>StoryBot ("we", "our", "the app") is a personal video publishing tool that automates the creation and posting of short-form video content to social media platforms including TikTok, Instagram, and YouTube.</p>
+    <p>StoryBot ("we", "us", "our", "the platform") is an AI-powered short-form video creation and publishing platform. This privacy policy explains how we collect, use, store, and protect your information when you use our platform and its integrations with third-party services.</p>
 
-    <h2>Information We Collect</h2>
-    <p>StoryBot collects only the minimum information required to publish content on your behalf:</p>
+    <p>By using StoryBot, you consent to the data practices described in this policy. If you do not agree, please do not use the platform.</p>
+
+    <h2>1. Information We Collect</h2>
+
+    <h3>1.1 Account and Authentication Data</h3>
+    <p>When you connect a social media account to StoryBot, we collect:</p>
+    <table>
+        <tr><th>Data Type</th><th>Source</th><th>Purpose</th></tr>
+        <tr><td>OAuth access tokens</td><td>TikTok, Instagram, YouTube</td><td>Publish content on your behalf</td></tr>
+        <tr><td>Refresh tokens</td><td>TikTok, Instagram, YouTube</td><td>Maintain authorized access</td></tr>
+        <tr><td>User/account ID</td><td>TikTok (open_id), Instagram (IG User ID), YouTube (channel ID)</td><td>Identify your account for publishing</td></tr>
+        <tr><td>Username/display name</td><td>Connected platforms</td><td>Display in the application interface</td></tr>
+    </table>
+
+    <h3>1.2 Content Data</h3>
     <ul>
-        <li><strong>Authentication tokens</strong> — OAuth access tokens and refresh tokens provided by social media platforms (TikTok, Instagram, YouTube) when you authorize the app. These are stored locally on your device.</li>
-        <li><strong>Video content</strong> — Videos you create using the app, stored locally on your device until uploaded.</li>
-        <li><strong>Performance data</strong> — View and like counts you manually enter, stored locally for content optimization.</li>
+        <li><strong>Generated scripts</strong> — AI-written video scripts created by the platform</li>
+        <li><strong>Video files</strong> — Rendered MP4 videos stored locally on your device</li>
+        <li><strong>Upload metadata</strong> — Titles, captions, hashtags, and descriptions generated for each platform</li>
+        <li><strong>Published content IDs</strong> — Post IDs returned by platforms after successful publishing (publish_id, media_id)</li>
     </ul>
 
-    <h2>How We Use Your Information</h2>
-    <p>Authentication tokens are used solely to publish videos to your authorized social media accounts. We do not use your information for any other purpose.</p>
+    <h3>1.3 Performance Data</h3>
+    <p>If you choose to input performance metrics (view counts, like counts), this data is stored locally to improve future content recommendations. We do not automatically collect analytics from your social media accounts.</p>
 
-    <h2>Data Storage</h2>
-    <p>All data is stored locally on your personal computer. We do not operate servers, databases, or cloud storage. No data is transmitted to any third party other than the social media platforms you explicitly authorize.</p>
-
-    <h2>Third-Party Services</h2>
-    <p>StoryBot interacts with the following third-party APIs on your behalf:</p>
+    <h2>2. How We Use Your Information</h2>
     <ul>
-        <li>TikTok Content Posting API</li>
-        <li>Instagram Graph API</li>
-        <li>YouTube Data API v3</li>
-        <li>OpenAI API (for text-to-speech and transcription)</li>
-        <li>Anthropic API (for content generation)</li>
+        <li><strong>Publishing content</strong> — Authentication tokens and account IDs are used solely to upload and publish videos to your authorized social media accounts via their official APIs.</li>
+        <li><strong>Content creation</strong> — Scripts and metadata are generated locally and used only for creating your videos.</li>
+        <li><strong>Performance optimization</strong> — Performance data you provide is used to improve content recommendations for your future videos.</li>
     </ul>
-    <p>Each of these services has its own privacy policy. We encourage you to review them.</p>
+    <p>We do not use your data for advertising, profiling, or any purpose other than providing the StoryBot service to you.</p>
 
-    <h2>Data Sharing</h2>
-    <p>We do not sell, rent, or share your personal data with anyone. Period.</p>
+    <h2>3. Third-Party Services and APIs</h2>
+    <p>StoryBot integrates with the following third-party services. Your use of StoryBot is also subject to these services' terms and privacy policies:</p>
+    <ul>
+        <li><strong>TikTok Content Posting API</strong> — Used to publish videos to your TikTok account. Subject to <a href="https://www.tiktok.com/legal/page/global/tik-tok-developer-terms-of-service/en">TikTok's Developer Terms of Service</a> and <a href="https://www.tiktok.com/legal/privacy-policy">TikTok's Privacy Policy</a>.</li>
+        <li><strong>Instagram Graph API</strong> — Used to publish Reels to your Instagram account. Subject to <a href="https://developers.facebook.com/terms/">Meta Platform Terms</a> and <a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a>.</li>
+        <li><strong>YouTube Data API v3</strong> — Used to upload Shorts to your YouTube channel. Subject to <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Terms of Service</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+        <li><strong>OpenAI API</strong> — Used for text-to-speech generation and audio transcription. No user account data is sent to OpenAI; only generated script text and audio files are processed.</li>
+        <li><strong>Anthropic API</strong> — Used for AI script generation and content quality review. No user account data is sent to Anthropic; only content text is processed.</li>
+    </ul>
 
-    <h2>Data Deletion</h2>
-    <p>Since all data is stored locally, you can delete it at any time by removing the application files from your computer. To revoke platform access, visit the settings page of each social media platform.</p>
+    <h2>4. Data Storage and Retention</h2>
+    <ul>
+        <li><strong>Local storage only</strong> — All data is stored locally on your personal device. StoryBot does not operate cloud servers or external databases.</li>
+        <li><strong>Authentication tokens</strong> — Stored in your local configuration file for as long as your accounts are connected. Tokens are overwritten when refreshed and deleted when you disconnect an account.</li>
+        <li><strong>Video files and scripts</strong> — Stored locally until you delete them. Temporary files are automatically cleaned up after each video is rendered.</li>
+        <li><strong>Performance logs</strong> — Stored locally indefinitely until you delete the log file.</li>
+        <li><strong>Published content IDs</strong> — Stored locally to prevent duplicate posting. Retained until you delete the tracking file.</li>
+    </ul>
 
-    <h2>Children's Privacy</h2>
-    <p>StoryBot is not intended for use by anyone under the age of 13.</p>
+    <h2>5. Data Sharing</h2>
+    <p>We do not sell, rent, trade, or share your personal data with any third party. Data is only transmitted to the social media platforms you explicitly authorize for the sole purpose of publishing your content.</p>
 
-    <h2>Changes to This Policy</h2>
-    <p>We may update this privacy policy from time to time. Changes will be reflected on this page with an updated date.</p>
+    <h2>6. Data Security</h2>
+    <p>Authentication tokens and API credentials are stored in local configuration files on your device. We recommend:</p>
+    <ul>
+        <li>Keeping your device secured with a password or biometric lock</li>
+        <li>Not sharing your configuration files or API keys with others</li>
+        <li>Revoking platform access if you suspect unauthorized use</li>
+    </ul>
 
-    <h2>Contact</h2>
-    <p>If you have questions about this privacy policy, please reach out via the contact information on our social media profiles.</p>
+    <h2>7. Your Rights</h2>
 
-    <p><a href="/">&larr; Back to StoryBot</a></p>
+    <h3>7.1 All Users</h3>
+    <p>You have the right to:</p>
+    <ul>
+        <li><strong>Access</strong> — View all data StoryBot stores about you (stored locally in your project folder)</li>
+        <li><strong>Delete</strong> — Remove all data by deleting the application files from your device</li>
+        <li><strong>Revoke access</strong> — Disconnect social media accounts at any time by removing tokens from your configuration or revoking access through each platform's settings</li>
+        <li><strong>Portability</strong> — All data is stored in standard formats (JSON, TOML, MP4) and can be freely copied or moved</li>
+    </ul>
+
+    <h3>7.2 European Economic Area (GDPR)</h3>
+    <p>If you are located in the EEA, you have additional rights under the General Data Protection Regulation, including the right to access, rectification, erasure, restriction of processing, data portability, and objection. Since all data is stored locally on your device, you can exercise these rights directly by accessing, modifying, or deleting the relevant files. For assistance, contact us at the email below.</p>
+
+    <h3>7.3 California (CCPA/CPRA)</h3>
+    <p>If you are a California resident, you have rights under the California Consumer Privacy Act, including the right to know what data is collected, the right to delete, and the right to opt out of the sale of personal information. We do not sell your personal information. All data is stored locally and under your direct control.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>StoryBot is not intended for use by anyone under the age of 13 (or the applicable minimum age in your jurisdiction). We do not knowingly collect data from children.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date. Continued use of StoryBot after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>If you have questions about this privacy policy, your data, or wish to exercise any of your rights, please contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:jweiyeet@gmail.com">jweiyeet@gmail.com</a></p>
+
+    <p style="margin-top: 40px;"><a href="/">&larr; Back to StoryBot</a></p>
 </body>
 </html>
